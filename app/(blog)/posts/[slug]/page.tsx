@@ -4,7 +4,7 @@ import { type PortableTextBlock } from "next-sanity";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
-
+import CommentSection from "@/app/components/comments";
 import Avatar from "../../avatar";
 import CoverImage from "../../cover-image";
 import DateComponent from "../../date";
@@ -111,6 +111,8 @@ export default async function PostPage({ params }: Props) {
           <MoreStories skip={post._id} limit={2} />
         </Suspense>
       </aside>
+ <CommentSection/>
     </div>
+    
   );
 }

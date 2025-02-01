@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import CommentSection from "../components/comments";
 import Avatar from "./avatar";
 import CoverImage from "./cover-image";
 import DateComponent from "./date";
@@ -15,6 +15,8 @@ export default async function MoreStories(params: {
 
   return (
     <>
+
+    
       <div className="mb-32 grid grid-cols-1 gap-y-20 md:grid-cols-2 md:gap-x-16 md:gap-y-32 lg:gap-x-32">
         {data?.map((post) => {
           const { _id, title, slug, coverImage, excerpt, author } = post;
@@ -41,6 +43,7 @@ export default async function MoreStories(params: {
           );
         })}
       </div>
+    
     </>
   );
 }

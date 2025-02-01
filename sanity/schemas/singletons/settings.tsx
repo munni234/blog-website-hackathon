@@ -109,7 +109,7 @@ export default defineType({
           type: "url",
           description: (
             <a
-              href="https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase"
+              href="https://.org/docs/app/api-reference/functions/generate-metadata#metadatabase"
               rel="noreferrer noopener"
             >
               More information

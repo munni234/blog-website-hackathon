@@ -42,7 +42,7 @@ export default function AlertBanner() {
               }
               className="hover:text-cyan underline transition-colors duration-200"
             >
-              Back to published
+              Back 
             </button>
           </>
         )}
